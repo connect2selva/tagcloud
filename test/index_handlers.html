@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../src/jquery.tagcloud.js"></script>
+  <link href="../src/jquery.tagcloud.css" rel="stylesheet">
+<style>
+#tagcloud{width:500px}
+</style>
+</head>
+<body>
+	<div id="tagcloud"></div>
+	<script>
+		var tags = [ {name:"ActionScript",weight:10},{name:"AppleScript",weight:20},{name:"Asp",weight:30},{name:"BASIC",weight:50},{name:"C",weight:1},{name:"C++",weight:65},
+					{name:"Clojure",weight:23},{name:"COBOL",weight:22},{name:"ColdFusion",weight:15},{name:"Erlang",weight:12},{name:"Fortran",weight:25},
+					{name:"Groovy",weight:25},{name:"Haskell",weight:55},{name:"Java",weight:115},{name:"JavaScript",weight:4},{name:"Lisp",weight:43},{name:"Perl",weight:43},
+					{name:"PHP",weight:3},{name:"Python",weight:4},{name:"Ruby",weight:44},{name:"Scala",weight:34},{name:"Scheme",weight:23} ];
+		
+		$("#tagcloud").tagcloud({
+			source :  tags,
+			colors : [ "#CCE0CC", "#80B280", "#4D944D", "#197519", "#005C00" ],	//Less to more
+			handlers:{click:function(){alert($(this).text());},mouseover:function(){$(this).css("color","#0ff")}}
+		});
+	</script>
+</body>
+</html>

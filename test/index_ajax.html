@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../src/jquery.tagcloud.js"></script>
+  <link href="../src/jquery.tagcloud.css" rel="stylesheet">
+<style>
+#tagcloud{width:500px}
+</style>
+</head>
+<body>
+	<div id="tagcloud"></div>
+	<script>
+		$("#tagcloud").tagcloud({
+			source :  function(){
+							var result;
+							$.ajax({
+								url:"test.php",
+								dataType:'json',
+								async:false,
+								success: function(data) {
+									result = data;
+								}
+							});
+							return result;
+						},
+			colors : [ "#CCE0CC", "#80B280", "#4D944D", "#197519", "#005C00" ]	//Less to more
+		});
+	</script>
+</body>
+</html>

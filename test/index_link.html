@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../src/jquery.tagcloud.js"></script>
+  <link href="../src/jquery.tagcloud.css" rel="stylesheet">
+<style>
+#tagcloud{width:500px}
+</style>
+</head>
+<body>
+	<div id="tagcloud"></div>
+	<script>
+		var tags = [ {name:"ActionScript",weight:10,link:"http://www.google.com?#q=ActionScript"},{name:"AppleScript",weight:20,link:"http://www.google.com?#q=AppleScript"},{name:"Asp",weight:30,link:"http://www.google.com?#q=Asp"},{name:"BASIC",weight:50,link:"http://www.google.com?#q=BASIC"},{name:"C",weight:1,link:"http://www.google.com?#q=C"},{name:"C++",weight:65,link:"http://www.google.com?#q=c++"},
+				{name:"Clojure",weight:23,link:"http://www.google.com?#q=Clojure"},{name:"COBOL",weight:22,link:"http://www.google.com?#q=COBOL"},{name:"ColdFusion",weight:15,link:"http://www.google.com?#q=ColdFusion"},{name:"Erlang",weight:12,link:"http://www.google.com?#q=Erlang"},{name:"Fortran",weight:25,link:"http://www.google.com?#q=Fortran"},
+				{name:"Groovy",weight:25,link:"http://www.google.com?#q=Groovy"},{name:"Haskell",weight:55,link:"http://www.google.com?#q=Haskell"},{name:"Java",weight:115,link:"http://www.google.com?#q=Java"},{name:"JavaScript",weight:4,link:"http://www.google.com?#q=JavaScript"},{name:"Lisp",weight:43,link:"http://www.google.com?#q=Lisp"},{name:"Perl",weight:43,link:"http://www.google.com?#q=Perl"},
+				{name:"PHP",weight:3,link:"http://www.google.com?#q=PHP"},{name:"Python",weight:4,link:"http://www.google.com?#q=Python"},{name:"Ruby",weight:44,link:"http://www.google.com?#q=Ruby"},{name:"Scala",weight:34,link:"http://www.google.com?#q=Scala"},{name:"Scheme",weight:23,link:"http://www.google.com?#q=Scheme"} ];
+		
+		$("#tagcloud").tagcloud(tags);
+	</script>
+</body>
+</html>

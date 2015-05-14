@@ -19,8 +19,10 @@
 				{name:"Groovy",weight:25},{name:"Haskell",weight:55},{name:"Java",weight:115},{name:"JavaScript",weight:4},{name:"Lisp",weight:43},{name:"Perl",weight:43},
 				{name:"PHP",weight:3},{name:"Python",weight:4},{name:"Ruby",weight:44},{name:"Scala",weight:34},{name:"Scheme",weight:23} ];
 		
-		$("#tagcloud").tagcloud(tags);
-		
+		$("#tagcloud").tagcloud({
+			source : tags,
+			weightage:5
+		});
 	</script>
 </body>
 </html>
