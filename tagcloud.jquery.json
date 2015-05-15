@@ -1,0 +1,25 @@
+{
+    "name": "tagcloud",
+    "title": "jQuery Tagcloud",
+    "description": "A jump-start for jQuery plugins development. A Simple jquery plugin for tagcloud",
+    "keywords": [
+        "jquery-plugins",
+        "tagcloud"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Selvakumar Ponnusamy",
+        "url": "https://github.com/connect2selva/tagcloud"
+    },
+    "maintainers": [
+        {
+            "name": "Selvakumar Ponnusamy",
+            "url": "https://github.com/connect2selva"
+        }
+    ],
+    "homepage": "https://github.com/connect2selva/tagcloud",
+    "download": "https://github.com/connect2selva/tagcloud",
+    "dependencies": {
+        "jquery": ">=1.11"
+    }
+}
