@@ -8,4 +8,3 @@ There is nothing to installation. Just download the tagcloud.js and use it in yo
 
 #Examples:
 The test folder contains how to use the tag cloud.
-
